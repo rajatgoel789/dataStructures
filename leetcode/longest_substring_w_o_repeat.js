@@ -15,7 +15,7 @@ var lengthOfLongestSubstring = function (s) {
         let char = s[right];
         if (!CharSet.has(char)) {
             CharSet.add(char)
-            longestLen = Math.max(longestLen, CharSet.size);
+            longestLen = Math.max(longestLen, CharSet.size)
             right++;
         } else {
             CharSet.delete(s[left]);
